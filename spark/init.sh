@@ -18,7 +18,7 @@ then
   git remote add origin $repo
   git fetch origin
   git checkout $git_hash
-  sbt/sbt clean assembly
+  SPARK_HADOOP_VERSION=2.2.0 SPARK_YARN=true sbt/sbt clean assembly
   sbt/sbt publish-local
   popd
 
