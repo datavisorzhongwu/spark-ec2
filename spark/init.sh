@@ -2,10 +2,6 @@
 
 pushd /root
 
-if [ -d "spark" ]; then
-  echo "Spark seems to be installed. Exiting."
-  return
-fi
 
 # Github tag:
 mkdir spark
